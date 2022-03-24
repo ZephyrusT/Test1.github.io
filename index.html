@@ -31,7 +31,7 @@
     <script>
 		document.getElementById('D1-on').addEventListener('click', function() {
 				var ip = document.getElementById('ip').value;
-				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=1"
+				var url = "https://api.thingspeak.com/update?api_key="+ ip + "&field1=1"
 				$.getJSON(url, function(data) {
 					console.log(data);
 				});
@@ -39,7 +39,7 @@
 		
 		document.getElementById('D1-off').addEventListener('click', function() {
 				var ip = document.getElementById('ip').value;
-				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=0"
+				var url = "https://api.thingspeak.com/update?api_key="+ ip + "&field1=0"
 				$.getJSON(url, function(data) {
 					console.log(data);
 				});
